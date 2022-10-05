@@ -11,7 +11,7 @@
     <header>
         <h1>Our First Meeting & <i>Introductions!</i></h1>
     </header>
-    <hr/>
+    <hr></hr>
     <main>
         <div>
             <section>
@@ -74,6 +74,15 @@
                             <input type="date"><br>
                             <label>Feedback</label><br>
                             <textarea></textarea><br>
+                            <label>What's your favorite color?</label><br>
+                            <input list="colors" name="color" id="color">
+                            <datalist id="colors">
+                                <option value="Red">
+                                <option value="Green">
+                                <option value="Blue">
+                                <option value="Yellow">
+                                <option value="Orange">
+                            </datalist><br>
                             <label>Rate this meeting</label><br>
                             <input type="radio" id="good" name="rating" value="good">
                             <label for="good">Good</label><br>
@@ -81,7 +90,6 @@
                             <label for="ok">OK</label><br>
                             <input type="radio" id="bad" name="rating" value="bad">
                             <label for="bad">Bad</label><br>
-                            </datalist>
                             <label>What's the best day for our meetings?</label><br>
                             <select>
                                 <option value="Monday">Monday</option>
@@ -91,11 +99,11 @@
                                 <option value="Friday">Friday</option>
                             </select><br>
                             <label>Which days work for you?</label><br>
-                            <input type="checkbox">Monday</input>
-                            <input type="checkbox">Tuesday</input>
-                            <input type="checkbox">Wednesday</input>
-                            <input type="checkbox">Thursday</input>
-                            <input type="checkbox">Friday</input><br>
+                            <input type="checkbox">Monday
+                            <input type="checkbox">Tuesday
+                            <input type="checkbox">Wednesday
+                            <input type="checkbox">Thursday
+                            <input type="checkbox">Friday<br>
                             <button>Submit</button>
                         </fieldset>
                     </form>
