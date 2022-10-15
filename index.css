@@ -2,7 +2,7 @@
 * {
     background-color: rgb(77, 128, 229);
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 12pt;
 }
 
 nav a {
@@ -10,14 +10,14 @@ nav a {
 }
 
 #header > hr {
-    height: 3px;
+    height: 0.25cm;
     border: none;
     background-color: hsl(227, 55%, 28%);
 }
 
 h1 ~ hr {
-    max-width: 100rem;
-    min-width: 10rem;
+    max-width: 100em;
+    min-width: 10vw;
 }
 
 video, audio {
