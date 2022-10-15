@@ -1,19 +1,21 @@
 /** CSS Stylings for Lab 3 */
 * {
-    color: white;
     background-color: rgb(77, 128, 229);
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
 }
 
-a {
+nav a {
     color: #000000;
 }
 
-hr {
+#header > hr {
     height: 3px;
     border: none;
     background-color: hsl(227, 55%, 28%);
+}
+
+h1 ~ hr {
     max-width: 100rem;
     min-width: 10rem;
 }
@@ -28,7 +30,7 @@ main {
     padding-top: 10px;
 }
 
-header {
+#header {
     margin: 0 0 0 1rem;
 }
 
@@ -54,8 +56,11 @@ footer {
     padding: 10px 0px 0px 0px;
 }
 
-fieldset {
+summary + form {
     margin: 1rem 0 0 0;
+}
+
+fieldset {
     border-style: double;
     border-color: black;
     border-width: 10px;
@@ -79,7 +84,7 @@ button:active {
     transform: scale(1.1);
 }
 
-.header {
+#header {
     width: 100%;
     position: sticky;
 }
@@ -91,7 +96,7 @@ button:active {
     gap: 5px;
 }
 
-.media-section {
+section.media-section {
     display: grid;
     align-content: space-evenly;
     row-gap: 10px;
@@ -102,4 +107,8 @@ button:active {
     footer {
         display: none;
     }
+}
+
+label[for] {
+    font-size: 16px;
 }
