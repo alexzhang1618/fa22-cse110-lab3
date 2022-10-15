@@ -6,12 +6,16 @@
     <meta name="description" content="First Meeting">
     <title>First Meeting</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=2">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-        <h1>Our First Meeting & <i>Introductions!</i></h1>
+        <div class="header">
+            <h1>Our First Meeting & <i>Introductions!</i></h1>
+            <hr/>
+        </div>
     </header>
-    <hr/>
     <main>
         <div>
             <section>
@@ -51,13 +55,13 @@
                     <a href="https://github.com/alexzhang1618/Lab2_Starter">GitHub Repo</a>
                 </nav>
             </section>
-            <section>
+            <section class="media-section">
                 <h3>Audio & Video</h3>
                 <audio controls>
                     <source src="assets/audio.mp3" type="audio/mp3">
                 </audio>
                 <br>
-                <video width="320" height="240" controls>
+                <video width="640" controls>
                     <source src="assets/movie.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -68,13 +72,13 @@
                     <summary>Fill out this form</summary>
                     <form>
                         <fieldset>
-                            <label>Name</label><br>
-                            <input type="text"><br>
-                            <label>Date</label><br>
-                            <input type="date"><br>
-                            <label>Feedback</label><br>
-                            <textarea></textarea><br>
-                            <label>What's your favorite color?</label><br>
+                            <label>Name</label>
+                            <input type="text">
+                            <label>Date</label>
+                            <input type="date">
+                            <label>Feedback</label>
+                            <textarea></textarea>
+                            <label>What's your favorite color?</label>
                             <input list="colors" name="color" id="color">
                             <datalist id="colors">
                                 <option value="Red">
@@ -82,15 +86,17 @@
                                 <option value="Blue">
                                 <option value="Yellow">
                                 <option value="Orange">
-                            </datalist><br>
-                            <label>Rate this meeting</label><br>
-                            <input type="radio" id="good" name="rating" value="good">
-                            <label for="good">Good</label><br>
-                            <input type="radio" id="ok" name="rating" value="ok">
-                            <label for="ok">OK</label><br>
-                            <input type="radio" id="bad" name="rating" value="bad">
-                            <label for="bad">Bad</label><br>
-                            <label>What's the best day for our meetings?</label><br>
+                            </datalist>
+                            <label>Rate this meeting</label>
+                            <div class="radio-div">
+                                <input type="radio" id="good" name="rating" value="good">
+                                <label for="good" style="display: inline;">Good</label>
+                                <input type="radio" id="ok" name="rating" value="ok">
+                                <label for="ok" style="display: inline;">OK</label>
+                                <input type="radio" id="bad" name="rating" value="bad">
+                                <label for="bad" style="display: inline;">Bad</label>
+                            </div>  
+                            <label>What's the best day for our meetings?</label>
                             <select>
                                 <option value="Monday">Monday</option>
                                 <option value="Tuesday">Tuesday</option>
@@ -98,13 +104,14 @@
                                 <option value="Thursday">Thursday</option>
                                 <option value="Friday">Friday</option>
                             </select><br>
-                            <label>Which days work for you?</label><br>
+                            <label>Which days work for you?</label>
                             <input type="checkbox">Monday
                             <input type="checkbox">Tuesday
                             <input type="checkbox">Wednesday
                             <input type="checkbox">Thursday
-                            <input type="checkbox">Friday<br>
-                            <button>Submit</button>
+                            <input type="checkbox">Friday
+                            <br>
+                            <button class="submit">Submit</button>
                         </fieldset>
                     </form>
                 </details>
